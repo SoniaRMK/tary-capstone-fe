@@ -6,7 +6,7 @@ function GlutenFreeRecipeList() {
     const [glutenFreeRecipes, setGlutenFreeRecipes] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/recipes/gluten")
+        fetch("https://taryn-be.onrender.com/recipes/gluten")
             .then((response) => {
                 return response.json();
             })
